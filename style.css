@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.bg-custom-image {
+    background-image: linear-gradient(0deg, rgba(106, 120, 208, 0.2), rgba(0, 0, 0, 0.9)), url('./Images/ship.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* z-index: -1 ; */
+}
+
+.clip-path {
+    clip-path: polygon(100% 0, 100% 90%, 54% 100%, 0 90%, 0 0);
+}
+
+.animate-slide {
+    animation: slide 2s ease;
+}
+
+@keyframes slide {
+    from {
+        translate: -60rem 0;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
+.animate-slide2 {
+    animation: slide2 2s ease;
+}
+
+
+@keyframes slide2 {
+    from {
+        translate: 60rem 0;
+    }
+
+    to {
+        translate: 0 0;
+    }
+}
+
+.animate-translateup {
+    animation: translateup 2s ease forwards;
+}
+
+@keyframes translateup {
+    from {
+        translate: 0 5rem;
+    }
+
+    to {
+        /* position: sticky; */
+        translate: 0 -10rem;
+    }
+}
+
+.bg-custom-image2 {
+    background-image: url("https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/bg-blur-blue2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-custom-image3 {
+    background-image: url("https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/bg-blur-3-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-custom-image4 {
+    background-image: linear-gradient(0deg, rgba(7, 7, 10, 0.4), rgba(0, 0, 0, 0.6)), url("https://templatekit.jegtheme.com/fiqua/wp-content/uploads/sites/179/2021/10/farm-salmon-fishing-aerial-fpv-drone-photography--e1634221501867.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@keyframes radiate {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+    }
+
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+    
+}
+ .radiate{
+    animation: radiate 2s ease-in infinite;
+ }
